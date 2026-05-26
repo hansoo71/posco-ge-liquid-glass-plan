@@ -1,0 +1,1 @@
+document.querySelector('.mode-toggle')?.addEventListener('click',()=>document.body.classList.toggle('contrast'));const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('seen')})},{threshold:.08});document.querySelectorAll('.glass,.section-panel,.month-card').forEach(el=>observer.observe(el));
